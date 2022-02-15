@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingVertical="2dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mirshod"
+                android:id="@+id/iv_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|end">
+                <TextView
+                    android:text="1:05:08"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/border_round_time"
+                    android:paddingHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_telegram"
+            app:shapeAppearanceOverlay="@style/circle"            
+            android:layout_height="40dp"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="13sp"
+                android:textColor="#90ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ethical Hacking Full Course-Learn
+Ethical Hacking in 10 hours"/>
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#90ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ethical hacking •7M views 1 • years ago"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/ic_more_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
